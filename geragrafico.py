@@ -13,6 +13,8 @@ def main():
     
     for i in range(len(valores)):
         plt.plot(valores[i])
+    
+    plt.title('Gráfico de linhas')
     plt.show()
 
 main()
