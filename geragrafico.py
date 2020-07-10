@@ -14,9 +14,10 @@ def main():
     plt.ylabel('Valores de entrada')
     
     for i in range(len(valores)):
-        plt.plot(valores[i])
+        plt.plot(valores[i], label='Série ' + str(i+1))
     
     plt.title('Gráfico de linhas')
+    plt.legend(loc='upper left')
 
     plt.subplot(1, 2, 2)
     medias = leitor.calculaMedias()
